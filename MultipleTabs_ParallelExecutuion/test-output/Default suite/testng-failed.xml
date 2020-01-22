@@ -5,8 +5,8 @@
     <classes>
       <class name="com.qa.mtpe.TestCases.MultipleTabsTest">
         <methods>
-          <include name="First_Test"/>
           <include name="TearDown"/>
+          <include name="ParallelExecutionTest"/>
           <include name="setup"/>
         </methods>
       </class> <!-- com.qa.mtpe.TestCases.MultipleTabsTest -->

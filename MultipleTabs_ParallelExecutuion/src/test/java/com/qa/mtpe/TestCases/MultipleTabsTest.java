@@ -61,16 +61,48 @@ public class MultipleTabsTest extends BaseClass
 		String title_First = MainPage.gettitle();
 		System.out.println("The title of first page is: " + title_First);
 		Assert.assertEquals("", title_First);
+		System.out.println(Thread.currentThread().getId());
 		
 		
 	}
 	
-	@AfterMethod
+	
+	
+	@Test
+	public void ParallelExecutionTest()
+	{
+		driver.get("https://selenium.dev/");
+		driver.manage().timeouts().pageLoadTimeout(com.qa.mtpe.TestUtil.UtilityClass.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(com.qa.mtpe.TestUtil.UtilityClass.IMPLICIT_WAIT, TimeUnit.SECONDS);
+	
+		String newWindow = driver.getWindowHandle();
+		driver.get("https://selenium.dev/downloads/");
+		driver.manage().timeouts().pageLoadTimeout(com.qa.mtpe.TestUtil.UtilityClass.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(com.qa.mtpe.TestUtil.UtilityClass.IMPLICIT_WAIT, TimeUnit.SECONDS);
+	
+		
+		String title_Second = SecondaryPage.gettitle_grid();
+		System.out.println("The title of second page is: " + title_Second);
+	//	Assert.assertEquals("Selenium Server (Grid)", title_Second);
+	
+		
+		driver.switchTo().window(newWindow);
+		driver.manage().timeouts().pageLoadTimeout(com.qa.mtpe.TestUtil.UtilityClass.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(com.qa.mtpe.TestUtil.UtilityClass.IMPLICIT_WAIT, TimeUnit.SECONDS);
+	
+		
+	//	String title_First = MainPage.gettitle2();
+	//	System.out.println("The title of first page is: " + title_First);
+	//	Assert.assertEquals("", title_First);
+		System.out.println(Thread.currentThread().getId());
+	}
+	
+/*	@AfterMethod
 	public void TearDown()
 	{
-		driver.close();
+		driver.quit();
 	
 	}
 	
-
+*/
 }

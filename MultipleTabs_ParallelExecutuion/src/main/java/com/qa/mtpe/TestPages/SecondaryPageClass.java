@@ -14,6 +14,9 @@ public class SecondaryPageClass extends BaseClass
 	@FindBy (xpath = "//h1[contains(text(),'Downloads')]")
 	WebElement Download_title;
 	
+	@FindBy (xpath = "//h2[contains(text(),'Selenium Server (Grid)')]")
+	WebElement Selenium_Server_Grid;
+	
 	public SecondaryPageClass() throws IOException 
 	{
 		PageFactory.initElements(driver, this);
@@ -25,5 +28,12 @@ public class SecondaryPageClass extends BaseClass
 	{
 		String Text_one = Download_title.getText();
 		return Text_one;
+	}
+	
+	public String gettitle_grid()
+	{
+		String Text_Two = Selenium_Server_Grid.getText();
+		return Text_Two;
+		
 	}
 }

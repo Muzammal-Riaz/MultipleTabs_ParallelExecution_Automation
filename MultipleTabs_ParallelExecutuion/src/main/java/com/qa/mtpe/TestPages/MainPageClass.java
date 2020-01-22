@@ -15,6 +15,9 @@ public class MainPageClass extends BaseClass
 	@FindBy (xpath = "//img[@class='logo logo-large']")
 	WebElement Selenium_Title;
 	
+	@FindBy (xpath = "//h2[contains(text(),'Getting Started')]")
+	WebElement Getting_Started;
+	
 	
 	
 	public MainPageClass() throws IOException
@@ -29,5 +32,11 @@ public class MainPageClass extends BaseClass
 		
 	String Title =	Selenium_Title.getText();
 	return Title;
+	}
+	
+	public String gettitle2()
+	{
+		String Title1 = Getting_Started.getText();
+		return Title1;
 	}
 }
