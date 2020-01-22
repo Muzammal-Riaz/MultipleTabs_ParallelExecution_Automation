@@ -12,6 +12,7 @@ import org.testng.annotations.Test;
 import com.qa.mtpe.TestBase.BaseClass;
 import com.qa.mtpe.TestPages.MainPageClass;
 import com.qa.mtpe.TestPages.SecondaryPageClass;
+import com.qa.mtpe.Testdata.HashMapsforURL;
 
 public class MultipleTabsTest extends BaseClass
 {
@@ -37,13 +38,15 @@ public class MultipleTabsTest extends BaseClass
 	@Test
 	public void First_Test()
 	{
-		
-		driver.get("https://selenium.dev/");
+		String url1 = HashMapsforURL.geturls().get("seleniumpage");
+		driver.get(url1);
 		driver.manage().timeouts().pageLoadTimeout(com.qa.mtpe.TestUtil.UtilityClass.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(com.qa.mtpe.TestUtil.UtilityClass.IMPLICIT_WAIT, TimeUnit.SECONDS);
 	
 		String newWindow = driver.getWindowHandle();
-		driver.get("https://selenium.dev/downloads/");
+		
+		String url2 = HashMapsforURL.geturls().get("downloadpage");
+		driver.get(url2);
 		driver.manage().timeouts().pageLoadTimeout(com.qa.mtpe.TestUtil.UtilityClass.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(com.qa.mtpe.TestUtil.UtilityClass.IMPLICIT_WAIT, TimeUnit.SECONDS);
 	
@@ -71,12 +74,15 @@ public class MultipleTabsTest extends BaseClass
 	@Test
 	public void ParallelExecutionTest()
 	{
-		driver.get("https://selenium.dev/");
+		String url1 = HashMapsforURL.geturls().get("seleniumpage");
+		driver.get(url1);
 		driver.manage().timeouts().pageLoadTimeout(com.qa.mtpe.TestUtil.UtilityClass.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(com.qa.mtpe.TestUtil.UtilityClass.IMPLICIT_WAIT, TimeUnit.SECONDS);
 	
 		String newWindow = driver.getWindowHandle();
-		driver.get("https://selenium.dev/downloads/");
+		
+		String url2 = HashMapsforURL.geturls().get("downloadpage");
+		driver.get(url2);
 		driver.manage().timeouts().pageLoadTimeout(com.qa.mtpe.TestUtil.UtilityClass.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(com.qa.mtpe.TestUtil.UtilityClass.IMPLICIT_WAIT, TimeUnit.SECONDS);
 	

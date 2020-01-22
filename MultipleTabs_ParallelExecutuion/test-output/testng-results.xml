@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="11215" started-at="2020-01-22T14:53:52 PKT" finished-at="2020-01-22T14:54:03 PKT">
+  <suite name="Suite" duration-ms="15072" started-at="2020-01-22T17:28:08 PKT" finished-at="2020-01-22T17:28:24 PKT">
     <groups>
     </groups>
-    <test name="Test" duration-ms="11215" started-at="2020-01-22T14:53:52 PKT" finished-at="2020-01-22T14:54:03 PKT">
+    <test name="Test" duration-ms="15072" started-at="2020-01-22T17:28:08 PKT" finished-at="2020-01-22T17:28:24 PKT">
       <class name="com.qa.mtpe.TestCases.MultipleTabsTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.mtpe.TestCases.MultipleTabsTest@1084709]" name="setup" is-config="true" duration-ms="7587" started-at="2020-01-22T14:53:52 PKT" finished-at="2020-01-22T14:54:00 PKT">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.mtpe.TestCases.MultipleTabsTest@1084709]" name="setup" is-config="true" duration-ms="10965" started-at="2020-01-22T17:28:09 PKT" finished-at="2020-01-22T17:28:19 PKT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.mtpe.TestCases.MultipleTabsTest@1084709]" name="setup" is-config="true" duration-ms="7583" started-at="2020-01-22T14:53:52 PKT" finished-at="2020-01-22T14:54:00 PKT">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.mtpe.TestCases.MultipleTabsTest@1084709]" name="setup" is-config="true" duration-ms="10965" started-at="2020-01-22T17:28:09 PKT" finished-at="2020-01-22T17:28:19 PKT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="ParallelExecutionTest()[pri:0, instance:com.qa.mtpe.TestCases.MultipleTabsTest@1084709]" name="ParallelExecutionTest" duration-ms="3541" started-at="2020-01-22T14:54:00 PKT" finished-at="2020-01-22T14:54:03 PKT">
+        <test-method status="PASS" signature="ParallelExecutionTest()[pri:0, instance:com.qa.mtpe.TestCases.MultipleTabsTest@1084709]" name="ParallelExecutionTest" duration-ms="3967" started-at="2020-01-22T17:28:19 PKT" finished-at="2020-01-22T17:28:23 PKT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ParallelExecutionTest -->
-        <test-method status="PASS" signature="First_Test()[pri:0, instance:com.qa.mtpe.TestCases.MultipleTabsTest@1084709]" name="First_Test" duration-ms="3561" started-at="2020-01-22T14:54:00 PKT" finished-at="2020-01-22T14:54:03 PKT">
+        <test-method status="PASS" signature="First_Test()[pri:0, instance:com.qa.mtpe.TestCases.MultipleTabsTest@1084709]" name="First_Test" duration-ms="4039" started-at="2020-01-22T17:28:19 PKT" finished-at="2020-01-22T17:28:24 PKT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- First_Test -->
